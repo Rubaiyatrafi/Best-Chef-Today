@@ -1,0 +1,11 @@
+.active {
+  color: red;
+}
+a {
+  margin: 20px;
+  color: rgb(158, 68, 161);
+}
+a:hover {
+  color: rgb(15, 97, 129);
+  font-size: larger;
+}
