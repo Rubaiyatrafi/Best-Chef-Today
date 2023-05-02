@@ -3,6 +3,7 @@ import React from "react";
 import "./Home.css";
 import image from "../../../assets/food-1.jpg";
 import { Link } from "react-router-dom";
+import Chefs from "../../Chefs/Chefs";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
           <img className="rounded-lg" src={image} alt="" />
         </div>
       </div>
+      <Chefs></Chefs>
     </div>
   );
 };

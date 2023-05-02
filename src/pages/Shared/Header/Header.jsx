@@ -9,7 +9,7 @@ const Header = () => {
       <nav className="navbar  mt-10 md:flex-row space-x-40 justify-center flex-col">
         <div>
           <img className="w-12 rounded-lg" src={logo} alt="" />
-          <h2 className="ml-2 mr-10 text-5xl font-bold font-serif text-blue-950 title-name">
+          <h2 className="ml-2 text-5xl font-bold font-serif text-blue-950 title-name">
             Best <span className="text-rose-700">Chef</span> Today
           </h2>
         </div>

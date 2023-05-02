@@ -1,0 +1,15 @@
+.chefs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 30px 15px 15px 15px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(236, 234, 232);
+}
+@media screen and (max-width: 576px) {
+  .chefs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
