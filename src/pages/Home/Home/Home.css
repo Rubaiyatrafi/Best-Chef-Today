@@ -1,0 +1,9 @@
+.title {
+  display: flex;
+}
+@media screen and (max-width: 576px) {
+  .title {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
