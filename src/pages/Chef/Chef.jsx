@@ -38,10 +38,17 @@ const Chef = () => {
               Years of Experience: {chefDetails.years_of_experience}
             </p>
             <p className="text-1xl font-sans font-semibold mt-5 ">
-              Recipe: {chefDetails.number_of_recipes}
+              Recipe:{" "}
+              <span className="text-red-800">
+                {chefDetails.number_of_recipes}
+              </span>
             </p>
             <p className="text-1xl font-sans font-semibold mt-5 ">
-              Like: {chefDetails.likes}
+              Like: <span className="text-red-800">{chefDetails.likes}</span>
+            </p>
+            <p className="text-1xl font-sans font-semibold mt-5 ">
+              Ratings:{" "}
+              <span className="text-red-800">{chefDetails.rating}</span>
             </p>
             <p className="text-sm font-sans font-semibold mt-10">
               Email: {chefDetails.email}
@@ -130,7 +137,7 @@ const Chef = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mb-20">
         {show && (
           <button
             onClick={() => setShow(!show)}

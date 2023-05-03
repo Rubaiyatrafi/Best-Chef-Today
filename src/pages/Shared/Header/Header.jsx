@@ -6,7 +6,7 @@ import logo from "../../../assets/5493254.jpg";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar  mt-10 md:flex-row space-x-40 justify-center flex-col">
+      <nav className="navbar mt-10 md:flex-row space-x-40 justify-center flex-col">
         <div>
           <img className="w-12 rounded-lg" src={logo} alt="" />
           <h2 className="ml-2 text-5xl font-bold font-serif text-blue-950 title-name">

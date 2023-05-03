@@ -1,6 +1,11 @@
 .active {
   color: red;
 }
+.navbar {
+  background-color: rgb(221, 238, 232);
+  padding: 20px;
+  border-radius: 20px;
+}
 a {
   margin: 20px;
   color: rgb(158, 68, 161);
