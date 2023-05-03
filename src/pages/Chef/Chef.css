@@ -1,0 +1,58 @@
+.chef-data {
+  background-image: url("../../assets/background.jpg");
+  border-radius: 10px;
+  background-repeat: none;
+}
+.chef-image {
+  width: 100px;
+  height: 150px;
+  border-radius: 50px;
+}
+.chef-name {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px 4px rgb(153, 154, 243);
+  padding: 10px;
+}
+.chef-contact {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px 4px rgb(153, 154, 243);
+  padding: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  color: blue;
+}
+
+.recipe-details {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-gap: 50px;
+  margin: 50px 20px 50px 20px;
+  padding: 20px;
+  background-color: rgb(248, 247, 246);
+  border-radius: 15px;
+}
+.recipes {
+  background-color: rgb(237, 237, 243);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px 4px rgb(248, 215, 214);
+}
+
+.recipe-img {
+  height: 350px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .recipe-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

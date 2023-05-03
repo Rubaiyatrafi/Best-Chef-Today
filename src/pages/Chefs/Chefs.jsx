@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import "./Chefs.css";
+import { Link } from "react-router-dom";
 
 const Chefs = () => {
   const [chefs, setChefs] = useState([]);
@@ -15,7 +16,7 @@ const Chefs = () => {
     <div>
       <div className="chefs">
         {chefs.map((chef) => (
-          <div className="chef">
+          <div className="chef" key={chef.id}>
             <img className="chef-img" src={chef.chef_picture} alt="" />
             <h1 className="text-3xl font-sans font-bold text-orange-500 mt-5">
               {chef.chef_name}
@@ -36,9 +37,11 @@ const Chefs = () => {
             <p className="like mt-2 font-mono">
               <FaHeart className="text-red-600 mr-3"></FaHeart> {chef.likes}
             </p>
-            <button className="btn btn-outline btn-secondary mt-4 w-full">
-              View Recipes{" "}
-            </button>
+            <Link to={`/chef/${chef.id}`} chef={chef}>
+              <button className="btn btn-outline btn-secondary mt-4">
+                View Recipes{" "}
+              </button>
+            </Link>
           </div>
         ))}
       </div>

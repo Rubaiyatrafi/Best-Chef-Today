@@ -20,8 +20,11 @@ const Home = () => {
               We are the most fastest and favorite Chef <br /> delivery service
               all over the world. <br /> Search for your favourite Chef. <br />
             </span>
-            <Link className="btn btn-secondary" to="/about">
-              About
+            <Link
+              className="btn btn-secondary w-40 text-white font-mono font-bold text-lg"
+              to="/about"
+            >
+              About Us
             </Link>
           </h1>
         </div>
