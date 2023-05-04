@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../assets/image-about.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -16,9 +17,15 @@ const About = () => {
             </span>
             <br />
             <span className="text-lg text-slate-700">
-              We also provide best Hotels in here <br /> So You can contact us
-              for any information <br /> Search for your favourite Chef. <br />
+              We also provide best Recipe in here <br /> So You can contact us
+              for any information <br /> Search for your favourite Recipe <br />
             </span>
+            <Link
+              className="btn btn-secondary w-40 text-white font-mono font-bold text-lg"
+              to="/recipe"
+            >
+              Recipe
+            </Link>
           </h1>
         </div>
       </div>
