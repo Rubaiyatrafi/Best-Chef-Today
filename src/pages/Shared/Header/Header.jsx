@@ -5,7 +5,13 @@ import logo from "../../../assets/5493254.jpg";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const Header = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
   return (
     <div>
       <nav className="navbar mt-10 md:flex-row space-x-40 justify-center flex-col">
@@ -20,8 +26,14 @@ const Header = () => {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/recipe">Recipe</NavLink>
-          {user && <h2>{user.displayName}</h2>}
-          <NavLink to="/login">Login</NavLink>
+          {user ? (
+            <>
+              <h2>{user.displayname}</h2>
+              <button onClick={handleLogout}>Sign Out</button>
+            </>
+          ) : (
+            <NavLink to="/login">Login</NavLink>
+          )}
         </div>
       </nav>
     </div>
