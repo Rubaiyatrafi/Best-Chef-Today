@@ -14,6 +14,16 @@ const Chefs = () => {
   }, []);
   return (
     <div>
+      <hr className="mt-10" />
+      <div className="mt-10">
+        <h1 className="text-center text-6xl font-semibold text-sky-600">
+          Here some of our best Chefs <br />{" "}
+          <span className="text-2xl text-sky-500">
+            You can see there details at a glance
+          </span>
+        </h1>
+      </div>
+      <hr className="mt-10" />
       <div className="chefs">
         {chefs.map((chef) => (
           <div className="chef" key={chef.id}>
